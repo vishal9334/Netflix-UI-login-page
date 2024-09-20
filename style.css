@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+.head{
+    width: 100%;
+    height: 10%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    position: absolute;
+    
+}
+.head :nth-child(1){
+   width: 150px;
+   margin-left: 100px;
+   fill: red;
+}
+
+.poster{
+   width: 100vw;
+   height: 100vh;
+   background: url(Assets/netflix\ poster.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex-direction: column;
+}
+.poster::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+.form{
+    width: 29vw;
+    height: 85vh;
+    background-color: #000;
+    opacity: 0.5;
+    position: relative;
+}
+.inner-form{
+    position: absolute;
+    width: 29vw;
+    height: 85vh;
+    background-color: transparent;
+    color: white;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.top{
+    width: 80%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.top-h1{
+    position: absolute;
+    left:35px;
+    top: 30px;
+}
+.email{
+    width: 80%;
+    height: 20%;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.58);
+    
+}
+.password{
+    width: 80%;
+    height: 20%;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+.sign-btn{
+    width: 80%;
+    height: 15%;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.center{
+    width: 80%;
+    height: 10%;
+    position: relative;
+
+}
+.center :nth-child(1){
+    /* nth child means select parent of child ok 
+    and must be care center and nth child both have space ok */
+    text-align: center;
+    font-size: 20px;
+    position:absolute;
+    top: 30%;
+    left: 45%;
+
+}
+
+.bottom{
+    width: 80%;
+    height: 15%;
+    display:flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+    gap: 10px;
+}
+.sign-in-code{
+    width: 80%;
+    height: 45%;
+    background-color:transparent;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px; 
+    position: relative;
+   color: white;
+   cursor: pointer;
+}
+
+.sign-in-code::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 240, 240);
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.forget-password{
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.checkbox{
+    width: 80%;
+    height: 5%;
+    
+}
+#check{
+    position: relative;
+    top: 25%;
+    left: 10%;
+    font-size: 18px;
+    cursor: pointer;
+}
+#checkbox{
+    position: relative;
+    top: 15%;
+    left: 12%;
+    font-size: 16px;
+}
+.bottom2{
+    width: 80%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+
+}
+.inner-bottom2{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.inner-bottom2 :nth-child(1){
+    color: rgba(255, 255, 255, 0.518);
+    font-size: 18px;
+}
+.inner-bottom2 :nth-child(1) :nth-child(1){
+    color: rgba(255, 255, 255, 0.932);
+    cursor: pointer;
+}
+.inner-bottom2 :nth-child(2){
+    color: rgba(255, 255, 255, 0.518);
+    font-size: 14px;
+}
+.inner-bottom2 :nth-child(2) :nth-child(1){
+    color: rgba(53, 0, 245, 0.947);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer{
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-column{
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 100px;
+    font-size:18px;
+    padding-left: 55px;
+    color: white;
+
+}
+.first-column :nth-child(2){
+    color: white;
+}
+.first-column :nth-child(3){
+    color: white;
+}
+.first-column :nth-child(4){
+    width: 100px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.sec-column{
+    width: 15vw;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size:18px;
+    color: white;
+    padding-bottom: 150px;
+    padding-left: 20px;
+    gap: 20px;
+    color: white;
+}
+.sec-column :nth-child(1){
+    color: white;
+}
+.sec-column :nth-child(2){
+    color: white;
+}
+
+.third-column{
+    width: 15vw;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size:18px;
+    color: white;
+    padding-bottom: 160px;
+    padding-left: 20px;
+    gap: 20px;
+    color: white;
+
+}
+.third-column :nth-child(1){
+    color: white;
+}
+.fourth-column{
+    width: 15vw;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size:18px;
+    color: white;
+    padding-bottom: 160px;
+    padding-left: 20px;
+    gap: 20px;
+    color: white;
+}
+.fourth-column :nth-child(1){
+    color: white;
+}
